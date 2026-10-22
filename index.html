@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>招商复色标准指南 · 大码男装</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#f3f1ec; --card:#fff; --ink:#15181b; --ink2:#41474d; --muted:#8b9096;
+  --line:#e5e1d9; --line2:#efece6;
+  --acc:#cf4a1c; --acc-d:#a83a12; --acc-t:#fdf1ea; --acc-b:#f2d9cb;
+  --biz:#2c5f7c; --biz-t:#eef4f8;
+  --ok:#3f7a52;
+  --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(rgba(0,0,0,.028) 1px,transparent 1px);background-size:7px 7px}
+a{cursor:pointer;text-decoration:none;color:inherit}
+.shell{display:flex;min-height:100vh;align-items:stretch}
+
+/* rail */
+.rail{flex:0 0 214px;background:#15181b;color:#fff;position:sticky;top:0;height:100vh;
+  display:flex;flex-direction:column;padding:26px 0 16px}
+.brand{padding:0 22px 18px;border-bottom:1px solid rgba(255,255,255,.09)}
+.brand .mk{font:700 10px/1 var(--sans);letter-spacing:.28em;color:#7f878f}
+.brand h2{font-family:var(--serif);font-size:19px;font-weight:700;letter-spacing:.02em;margin-top:10px}
+.brand p{font-size:10.5px;color:#767e86;letter-spacing:.12em;margin-top:5px}
+.toc{overflow-y:auto;padding:12px 10px 0;flex:1}
+.toc .grp{font-size:9.5px;letter-spacing:.22em;color:#5e666e;padding:4px 12px 7px}
+.ti{display:flex;align-items:center;gap:9px;padding:6px 12px;border-radius:7px;color:#b9c0c7;cursor:pointer;
+  font-size:12.5px;transition:.18s;border-left:2px solid transparent}
+.ti:hover{background:rgba(255,255,255,.055);color:#fff}
+.ti.on{background:#20252a;color:#fff;border-left-color:var(--acc)}
+.ti .n{font-family:var(--serif);font-size:11px;color:#6f777f;min-width:15px}
+.ti.on .n{color:var(--acc)}
+.ti .nm{flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.ti .w{font-size:9.5px;color:#6f777f;font-family:var(--serif)}
+.rail-foot{padding:12px 22px 0;border-top:1px solid rgba(255,255,255,.09);font-size:9.5px;
+  color:#656d75;line-height:1.75;letter-spacing:.03em}
+
+.main{flex:1 1 auto;min-width:0;padding:36px 44px 58px;max-width:1160px}
+
+/* overview */
+.kick{font-size:10px;letter-spacing:.3em;color:var(--acc);font-weight:700}
+.h1{font-family:var(--serif);font-size:40px;line-height:1.18;font-weight:700;letter-spacing:-.01em;margin:13px 0 0}
+.lead{margin-top:13px;font-size:13.5px;color:var(--ink2);max-width:44em}
+.lead b{color:var(--ink);border-bottom:1px solid var(--acc);padding-bottom:1px}
+
+
+.read{margin:24px 0 28px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:19px 23px;
+  display:flex;gap:24px;flex-wrap:wrap}
+.read > div{flex:1 1 220px;min-width:200px;border-left:1px solid var(--line2);padding-left:17px}
+.read > div:first-child{border-left:0;padding-left:0}
+.read h4{font-size:11px;letter-spacing:.13em;color:var(--acc);font-weight:700;margin-bottom:6px}
+.read p{font-size:12.5px;color:#4d5359;line-height:1.78}
+.read p b{color:var(--ink)}
+
+.sh{display:flex;align-items:baseline;justify-content:space-between;margin:0 0 11px;flex-wrap:wrap;gap:8px}
+.sh h3{font-family:var(--serif);font-size:19px;font-weight:700}
+.sh span{font-size:10px;letter-spacing:.18em;color:var(--muted)}
+
+.otw{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+table.ot{width:100%;border-collapse:collapse;font-size:12.5px;table-layout:fixed}
+table.ot th{font-size:10px;font-weight:600;letter-spacing:.09em;color:var(--muted);text-align:left;
+  padding:13px 12px;border-bottom:1px solid var(--line);background:#fbfaf7;white-space:nowrap}
+table.ot td{padding:13px 12px;border-bottom:1px solid var(--line2);vertical-align:middle}
+table.ot tr:last-child td{border-bottom:0}
+table.ot tbody tr{cursor:pointer;transition:background .15s}
+table.ot tbody tr:hover{background:#fbf7f3}
+.oc{display:flex;align-items:center;gap:9px}
+.oc .no{font-family:var(--serif);font-size:10.5px;color:#b9b2a6;min-width:14px}
+.oc .nm{font-size:13px;font-weight:600}
+.wtag{display:inline-block;font-family:var(--serif);font-size:13px;font-weight:700;color:var(--acc-d);
+  background:var(--acc-t);border:1px solid var(--acc-b);border-radius:5px;padding:1px 9px}
+.wtag.no{color:#9aa0a6;background:#f6f6f5;border-color:#e8e6e1;font-weight:400}
+.rg{font-family:var(--serif);font-size:13.5px}
+.rg u{text-decoration:none;color:var(--muted);font-size:10.5px;margin:0 5px}
+.rg i{font-style:normal;color:var(--muted);font-size:10.5px;margin-left:2px}
+.num{font-family:var(--serif);font-size:14px}
+.concl{font-size:11.5px;color:var(--ink2);line-height:1.6;display:block}
+.tfoot{padding:10px 14px;background:#fbfaf7;border-top:1px solid var(--line);font-size:10.5px;color:var(--muted)}
+
+/* detail head */
+.phead{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.pnum{font-family:var(--serif);font-size:44px;line-height:.95;color:#dcd5c8;font-weight:700}
+.pname{flex:1 1 220px;min-width:160px}
+.pname .bc{font-size:10.5px;letter-spacing:.14em;color:var(--muted)}
+.pname h1{font-family:var(--serif);font-size:33px;line-height:1.15;font-weight:700;margin-top:4px}
+.pnav{display:flex;align-items:center;gap:6px;padding-top:8px;flex-wrap:wrap}
+.pnav .gbtn{font-size:11.5px;color:var(--ink2);border:1px solid var(--line);background:#fff;
+  border-radius:20px;padding:3px 12px}
+.pnav .gbtn:hover{border-color:var(--acc);color:var(--acc)}
+.pnav button{width:27px;height:27px;border:1px solid var(--line);background:#fff;border-radius:50%;
+  color:var(--ink2);font-size:12px;cursor:pointer;line-height:1}
+.pnav button:hover{border-color:var(--acc);color:var(--acc)}
+.pnav button:disabled{opacity:.35;cursor:default}
+.pnav .pg{font-family:var(--serif);font-size:12px;color:var(--muted);padding:0 4px}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px 22px 21px;margin-bottom:16px}
+.chd{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.chd h2{font-family:var(--serif);font-size:17px;font-weight:700;display:flex;align-items:baseline;gap:9px}
+.chd h2 i{font-style:normal;font-size:11px;color:var(--acc);letter-spacing:.06em}
+.chd .en{font-size:9.5px;letter-spacing:.2em;color:var(--muted)}
+
+/* hero */
+.hero{display:flex;gap:26px;flex-wrap:wrap;align-items:center}
+.hero-l{flex:0 0 232px;min-width:200px}
+.hero-l .hl{font-size:10.5px;letter-spacing:.15em;color:var(--muted)}
+.hero-l .hv{font-family:var(--serif);font-size:46px;line-height:1.05;font-weight:700;margin:6px 0 2px;color:var(--ink)}
+.hero-l .hv s{text-decoration:none;font-size:15px;color:var(--muted);margin-left:6px;font-family:var(--sans)}
+.hero-l .hv.na{font-size:26px;color:#b3aaa0}
+.hero-l .vsub{font-size:11.5px;color:var(--ink2);line-height:1.7}
+
+.verd{flex:1 1 320px;min-width:240px;align-self:center;display:flex;align-items:center;gap:10px;
+  background:var(--acc-t);border:1px solid var(--acc-b);border-left:3px solid var(--acc);
+  border-radius:8px;padding:13px 16px;font-size:15px;color:#8a3410;font-weight:600}
+.vtext{margin-top:11px;font-size:12px;color:var(--ink2);line-height:1.85;white-space:pre-line}
+
+/* guide table */
+.gtw{overflow-x:auto;margin:0 -4px;padding:0 4px}
+table.gt{width:100%;min-width:840px;border-collapse:collapse;font-size:12px;table-layout:fixed}
+table.gt th{font-size:9.5px;font-weight:600;letter-spacing:.08em;color:var(--muted);text-align:left;
+  padding:0 10px 9px;border-bottom:1px solid var(--line);line-height:1.45}
+table.gt td{padding:12px 10px;border-bottom:1px solid var(--line2);vertical-align:top}
+table.gt tr:last-child td{border-bottom:0}
+table.gt tbody tr:hover{background:#fdfbf8}
+.pb{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:20px;padding:0 7px;
+  border-radius:5px;font-family:var(--serif);font-size:11.5px;font-weight:700;
+  background:#f2f0ea;color:#6b6862;border:1px solid #e6e2d8}
+.pb.p0{background:#fdece2;border-color:var(--acc-b);color:#b8410f}
+.pb.p1{background:#eef4f8;border-color:#d8e5ee;color:#245673}
+.pb.p2{background:#f0f2f5;border-color:#e0e4ea;color:#4a5560}
+.gtype{font-size:11.5px;color:var(--ink2);line-height:1.55}
+.gthr{font-family:var(--serif);font-size:14px}
+.gthr i{font-style:normal;font-size:9.5px;color:var(--muted);font-family:var(--sans);margin-left:2px}
+.gw{font-family:var(--serif);font-size:13px;color:var(--acc-d)}
+
+.cgrid{display:flex;flex-wrap:wrap;gap:7px}
+.cc{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:7px;
+  padding:4px 8px 4px 4px;background:#fdfcfa;min-width:0}
+.cc .sw{width:17px;height:17px;border-radius:4px;flex:0 0 auto;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.duo .cc{padding:5px 10px 5px 5px}
+.cc .tx{font-size:11.5px;line-height:1.25}
+.gt .gcol{vertical-align:top;background:#fdfbf7}
+.gnote{font-size:10.5px;color:#8b9096;margin-bottom:9px;letter-spacing:.01em}
+.gcol .prow:first-of-type{border-top:0;padding-top:0}
+.prow{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px dashed var(--line2)}
+.prow:first-child{border-top:0;padding-top:2px}
+.plab{flex:0 0 auto;font-size:12px;font-weight:700;letter-spacing:.03em;padding-top:1px;font-family:var(--serif)}
+.pbody{flex:1 1 auto;min-width:0}
+.pdesc{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;margin-bottom:6px}
+.pdesc b{font-size:11.5px;letter-spacing:.02em;color:var(--ink)}
+.pdesc b::after{content:'·';margin-left:7px;color:#c3c8ce}
+.pdesc span{font-size:10.5px;color:#8b9096}
+.plab.p0{color:#b8410f}
+.plab.p1{color:#245673}
+.plab.p2{color:#5d6670}
+.prow .cgrid{flex:1 1 auto;min-width:0}
+.subp{margin-left:8px;font-size:10px;color:#8b9096;letter-spacing:.02em}
+.cc .tx em{display:block;font-style:normal;font-size:9px;color:var(--muted);letter-spacing:.02em}
+
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:10.5px;color:var(--muted);margin-top:12px}
+.legend span{display:flex;align-items:center;gap:5px}
+.dot{width:8px;height:8px;border-radius:2px}
+
+.duo{display:flex;gap:18px;flex-wrap:wrap}
+.duo > div{flex:1 1 320px;min-width:260px}
+.duo .sub{font-size:10.5px;letter-spacing:.14em;color:var(--muted);font-weight:600;margin-bottom:9px;
+  display:flex;align-items:baseline;gap:8px}
+.duo .sub b{font-family:var(--serif);font-size:13px;color:var(--ink);letter-spacing:0}
+.ph{border:1px dashed #dcd6c9;background:#fbfaf7;border-radius:9px;padding:16px;text-align:center}
+.ph b{display:block;font-size:11.5px;color:#7a7468;margin-bottom:5px}
+.ph span{display:block;font-size:10.5px;color:var(--muted);line-height:1.75;max-width:30em;margin:0 auto}
+
+.foot{margin-top:18px;font-size:10px;color:var(--muted);line-height:1.9;letter-spacing:.02em}
+.foot b{color:#7a7468}
+
+@media (max-width:1080px){ .main{padding:28px 24px 46px} .h1{font-size:31px} }
+@media (max-width:900px){
+  .shell{display:block}
+  .rail{position:static;height:auto;flex:none;padding:16px 0 10px}
+  .toc{display:flex;overflow-x:auto;gap:4px;padding:9px 12px 3px;flex:1 1 auto}
+  .toc .grp{display:none}
+  .ti{flex:0 0 auto;border-left:0;border-bottom:2px solid transparent;border-radius:6px;padding:5px 10px}
+  .ti.on{border-left:0;border-bottom-color:var(--acc)}
+  .ti .w{display:none}
+  .rail-foot{display:none}
+  .brand{padding:0 18px 10px;border-bottom:0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .brand h2{font-size:16px;margin-top:0}
+  .main{padding:20px 16px 40px}
+  .hero-l{flex:1 1 100%;border-bottom:1px solid var(--line2);padding-bottom:14px}
+  .verd{flex:1 1 100%;font-size:14px}
+  table.gt{min-width:800px}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="brand">
+      <div class="mk">TEMU · CATEGORY</div>
+      <h2>复色标准</h2>
+      <p>大码男装 / 15 个一层品类</p>
+    </div>
+    <nav class="toc" id="toc"></nav>
+    <div class="rail-foot">
+      数据取自选色指南与品类颜色边际<br>
+      口径与原文一致，未做推断补全
+    </div>
+  </aside>
+  <main class="main" id="view"></main>
+</div>
+<script>
+const DATA = [{"id": 0, "name": "牛仔裤", "concl": "适合复色到 skc 宽度=2-3\n5色100%最高但要剔除（仅1款，大于5色无款），实际上2色48%最优，全档8%-48%，复色强。", "width": "2-3", "band": [2.0, 3.0], "noBoom": false, "stats": {"n": "217", "start": "1", "usual": "2", "high": "3", "peak": "5.4", "cap": "8", "avg": "2.86"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "2-3", "colors": "P0：蓝色、深灰色、浅蓝色\nP1：深蓝色、复古蓝色、青铜色、酒红色\nP2：宝蓝色、深青色、天蓝色、橄榄色、藏青色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "5.4", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "5.4", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "8", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "浅蓝色", "en": "Light Blue", "hex": "#8ab6e0"}], "P1": [{"zh": "深蓝色", "en": "Dark Blue", "hex": "#1f3f6d"}, {"zh": "复古蓝色", "en": "Vintage Blue", "hex": "#4a6f96"}, {"zh": "青铜色", "en": "Bronze", "hex": "#8c6a3f"}, {"zh": "酒红色", "en": "Claret Red", "hex": "#6e1f2a"}], "P2": [{"zh": "宝蓝色", "en": "Royal Blue", "hex": "#1b3fa0"}, {"zh": "深青色", "en": "Dark Teal", "hex": "#1f5f63"}, {"zh": "天蓝色", "en": "Sky Blue", "hex": "#79b7e3"}, {"zh": "橄榄色", "en": "Olive", "hex": "#7a7a45"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}]}, "hasGuide": true}, {"id": 1, "name": "卫衣", "concl": "适合复色到 skc 宽度=2-3\n0色15.0%最高但要剔除（仅20款），实际上2色12.8%最优，全档<15%，复色弱。\n1色均件3.7件最低。", "width": "2-3", "band": [2.0, 3.0], "noBoom": false, "stats": {"n": "132", "start": "1", "usual": "2", "high": "3", "peak": "6", "cap": "9", "avg": "2.89"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "2-3", "colors": "P0：浅灰色、藏青色、白色、深灰色、卡其色\nP1：咖啡色、棕色\nP2：橄榄棕色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "6", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "6", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "9", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "浅灰色", "en": "Light Grey", "hex": "#c9ced4"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}], "P1": [{"zh": "咖啡色", "en": "Coffee", "hex": "#5a4033"}, {"zh": "棕色", "en": "Brown", "hex": "#7b5136"}], "P2": [{"zh": "橄榄棕色", "en": "Olive Brown", "hex": "#6b5b43"}]}, "hasGuide": true}, {"id": 2, "name": "外套夹克", "concl": "适合复色到 skc 宽度=1-3\n1色41.6%最高且样本充足（137款）；0色50%仅6款需剔除，5色21.4%最低。\n>5色均件24.1件最高", "width": "1-3", "band": [1.0, 3.0], "noBoom": false, "stats": {"n": "243", "start": "1", "usual": "2", "high": "4", "peak": "9.8", "cap": "14.9", "avg": "4.10"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "1-3", "colors": "P0：灰色、白色、军绿色、蓝色、卡其色\nP1：棕色、深绿色、酒红色\nP2：深棕色、咖啡色、银灰色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "4", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "4", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "9.8", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "9.8", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "14.9", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}], "P1": [{"zh": "棕色", "en": "Brown", "hex": "#7b5136"}, {"zh": "深绿色", "en": "Dark Green", "hex": "#1f4d33"}, {"zh": "酒红色", "en": "Claret Red", "hex": "#6e1f2a"}], "P2": [{"zh": "深棕色", "en": "Dark Brown", "hex": "#4a3122"}, {"zh": "咖啡色", "en": "Coffee", "hex": "#5a4033"}, {"zh": "银灰色", "en": "Silvery Grey", "hex": "#b6bcc2"}]}, "hasGuide": true}, {"id": 3, "name": "套装", "concl": "适合复色到 skc 宽度=4-5\n5色35.0%最高但仅20款；剔除后2-3色6.1%-9.4%稳定，1色3.3%垫底", "width": "4-5", "band": [4.0, 5.0], "noBoom": false, "stats": {"n": "67", "start": "1", "usual": "2", "high": "2.5", "peak": "5", "cap": "7", "avg": "2.42"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "4-5", "colors": "P0：灰色、军绿色、蓝色、卡其色、深灰色\nP1：黑色、杏色、浅蓝色、白色、绿色、棕色\nP2：藏青色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "2.5", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "2.5", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "5", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "5", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "7", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}], "P1": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "杏色", "en": "Apricot", "hex": "#e8c9a8"}, {"zh": "浅蓝色", "en": "Light Blue", "hex": "#8ab6e0"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "绿色", "en": "Green", "hex": "#3f8f52"}, {"zh": "棕色", "en": "Brown", "hex": "#7b5136"}], "P2": [{"zh": "藏青色", "en": "Navy", "hex": "#22304f"}]}, "hasGuide": true}, {"id": 4, "name": "长裤", "concl": "适合复色到 skc 宽度=4-5\n>5色29%最高（4色25%、2色24%、3色24%均超20%）；", "width": "4-5", "band": [4.0, 5.0], "noBoom": false, "stats": {"n": "248", "start": "1", "usual": "3", "high": "5", "peak": "10", "cap": "14", "avg": "4.64"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "3", "width": "4-5", "colors": "P0：黑色、卡其色、灰色、藏青色、深灰色、蓝色\nP1：军绿色、咖啡色、白色、棕色、雾霾蓝色\nP2：深棕色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "5", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "5", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "10", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "10", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "14", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}, {"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}], "P1": [{"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}, {"zh": "咖啡色", "en": "Coffee", "hex": "#5a4033"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "棕色", "en": "Brown", "hex": "#7b5136"}, {"zh": "雾霾蓝色", "en": "", "hex": "#cfd4da"}], "P2": [{"zh": "深棕色", "en": "Dark Brown", "hex": "#4a3122"}]}, "hasGuide": true}, {"id": 5, "name": "背心", "concl": "适合复色到 skc 宽度=2-3\n3色7.9%最高（2色7.7%）；全档<8%，复色回报最弱；1色2.2%垫底。", "width": "2-3", "band": [2.0, 3.0], "noBoom": false, "stats": {"n": "25", "start": "1", "usual": "2", "high": "3", "peak": "5", "cap": "5", "avg": "2.48"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "2-3", "colors": "P0：黑色、白色、深灰色、军绿色、酒红色、藏青色\nP1：卡其色、浅蓝色、绿色、湖绿色、天蓝色\nP2：浅灰色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "5", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "5", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "5", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}, {"zh": "酒红色", "en": "Claret Red", "hex": "#6e1f2a"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}], "P1": [{"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}, {"zh": "浅蓝色", "en": "Light Blue", "hex": "#8ab6e0"}, {"zh": "绿色", "en": "Green", "hex": "#3f8f52"}, {"zh": "湖绿色", "en": "", "hex": "#cfd4da"}, {"zh": "天蓝色", "en": "Sky Blue", "hex": "#79b7e3"}], "P2": [{"zh": "浅灰色", "en": "Light Grey", "hex": "#c9ced4"}]}, "hasGuide": true}, {"id": 6, "name": "衬衫", "concl": "适合复色到 skc 宽度=4-5\n4色47.7%最高（5色46.1%、2色44.6%）；1色26.8%且均件14.7件最低。\n>5色均件62.8件偏高，疑受单款影响。", "width": "4-5", "band": [4.0, 5.0], "noBoom": false, "stats": {"n": "216", "start": "1", "usual": "2", "high": "4", "peak": "7", "cap": "11.25", "avg": "3.76"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "4-5", "colors": "P0：黑色、白色、藏青色、蓝色、卡其色\nP1：浅蓝色、杏色、薄荷绿色、红色、绿色\nP2：军绿色、天蓝色、紫罗兰色、孔雀绿色、铁锈色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "4", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "4", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "7", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "7", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "11.25", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}], "P1": [{"zh": "浅蓝色", "en": "Light Blue", "hex": "#8ab6e0"}, {"zh": "杏色", "en": "Apricot", "hex": "#e8c9a8"}, {"zh": "薄荷绿色", "en": "", "hex": "#cfd4da"}, {"zh": "红色", "en": "Red", "hex": "#c0392b"}, {"zh": "绿色", "en": "Green", "hex": "#3f8f52"}], "P2": [{"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}, {"zh": "天蓝色", "en": "Sky Blue", "hex": "#79b7e3"}, {"zh": "紫罗兰色", "en": "", "hex": "#cfd4da"}, {"zh": "孔雀绿色", "en": "", "hex": "#cfd4da"}, {"zh": "铁锈色", "en": "", "hex": "#cfd4da"}]}, "hasGuide": true}, {"id": 7, "name": "棉服", "concl": "适合复色到 skc 宽度=2-3\n1色45.5%最高（2色42.9%）；0色50%仅2款剔除；5色+骤降为0。", "width": "2-3", "band": [2.0, 3.0], "noBoom": false, "stats": {"n": "34", "start": "1", "usual": "2", "high": "3.75", "peak": "6", "cap": "12.75", "avg": "3.32"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "2-3", "colors": "P0：灰色、黑色、藏青色、浅灰色\nP1：深灰色、酒红色、薄荷蓝色、芥末黄色、深绿色\nP2：橄榄绿色、湖蓝色、橙色、橄榄色、海蓝色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "3.75", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "3.75", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "6", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "6", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "12.75", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "浅灰色", "en": "Light Grey", "hex": "#c9ced4"}], "P1": [{"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "酒红色", "en": "Claret Red", "hex": "#6e1f2a"}, {"zh": "薄荷蓝色", "en": "Mint Blue", "hex": "#a9d8d6"}, {"zh": "芥末黄色", "en": "Mustard Yellow", "hex": "#c9a227"}, {"zh": "深绿色", "en": "Dark Green", "hex": "#1f4d33"}], "P2": [{"zh": "橄榄绿色", "en": "Olive Green", "hex": "#6f7a48"}, {"zh": "湖蓝色", "en": "Lake Blue", "hex": "#3fa3b8"}, {"zh": "橙色", "en": "Orange", "hex": "#e0762c"}, {"zh": "橄榄色", "en": "Olive", "hex": "#7a7a45"}, {"zh": "海蓝色", "en": "Sea Blue", "hex": "#2d7f9d"}]}, "hasGuide": true}, {"id": 8, "name": "正装", "concl": "适合复色到 skc 宽度=2-3\n3色36.1%最高且均件21.6件双优；1色19.4%且均件最低。", "width": "2-3", "band": [2.0, 3.0], "noBoom": false, "stats": {"n": "57", "start": "1", "usual": "2", "high": "5", "peak": "8.4", "cap": "11", "avg": "4.19"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "2-3", "colors": "P0：黑色、藏青色、深灰色、灰色、蓝色\nP1：棕色、卡其色、雾霾蓝色、薄荷绿色、浅灰色、宝蓝色\nP2：白色、浅棕色、黄色、胭脂红色、深青色、明黄色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "5", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "5", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "8.4", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "8.4", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "11", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}], "P1": [{"zh": "棕色", "en": "Brown", "hex": "#7b5136"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}, {"zh": "雾霾蓝色", "en": "", "hex": "#cfd4da"}, {"zh": "薄荷绿色", "en": "", "hex": "#cfd4da"}, {"zh": "浅灰色", "en": "Light Grey", "hex": "#c9ced4"}, {"zh": "宝蓝色", "en": "Royal Blue", "hex": "#1b3fa0"}], "P2": [{"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "浅棕色", "en": "", "hex": "#cfd4da"}, {"zh": "黄色", "en": "Yellow", "hex": "#e8c33a"}, {"zh": "胭脂红色", "en": "", "hex": "#cfd4da"}, {"zh": "深青色", "en": "Dark Teal", "hex": "#1f5f63"}, {"zh": "明黄色", "en": "", "hex": "#cfd4da"}]}, "hasGuide": true}, {"id": 9, "name": "T恤", "concl": "适合复色到 skc 宽度=4-5\n5色5.6%最高，但整体爆旺率偏低（全档<6%），1色1.9%垫底。\n整体复色回报有限，4色均件13.3件为各档最高但仍属低位。", "width": "4-5", "band": [4.0, 5.0], "noBoom": false, "stats": {"n": "411", "start": "1", "usual": "3", "high": "4", "peak": "8", "cap": "12", "avg": "3.76"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "3", "width": "4-5", "colors": "P0：黑色、深绿色、绿色、\nP1：红色、浅蓝色\nP2：浅灰色、酒红色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "4", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "4", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "8", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "8", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "12", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "深绿色", "en": "Dark Green", "hex": "#1f4d33"}, {"zh": "绿色", "en": "Green", "hex": "#3f8f52"}], "P1": [{"zh": "红色", "en": "Red", "hex": "#c0392b"}, {"zh": "浅蓝色", "en": "Light Blue", "hex": "#8ab6e0"}], "P2": [{"zh": "浅灰色", "en": "Light Grey", "hex": "#c9ced4"}, {"zh": "酒红色", "en": "Claret Red", "hex": "#6e1f2a"}]}, "hasGuide": true}, {"id": 10, "name": "传统服饰", "concl": "适合复色到 skc 宽度=2-4\n4色34.4%最高（2色27.7%、3色24.7%），1色9.3%垫底。\n>5色均件40.9件偏高，疑受单款大件影响。", "width": "2-4", "band": [2.0, 4.0], "noBoom": false, "stats": {"n": "8", "start": "1.75", "usual": "2.5", "high": "4.25", "peak": "6.5", "cap": "8.25", "avg": "3.50"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2.5", "width": "2-4", "colors": "P0：绿色、紫色、灰色、粉色、蓝色、白色、黑色\nP1:白色、黑色\nP2:绿色、紫色、灰色、粉色、蓝色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "4.25", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "4.25", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "6.5", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "6.5", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "8.25", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "绿色", "en": "Green", "hex": "#3f8f52"}, {"zh": "紫色", "en": "Purple", "hex": "#7b4f9d"}, {"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "粉色", "en": "Pink", "hex": "#e9a8b4"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}], "P1": [{"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}], "P2": [{"zh": "绿色", "en": "Green", "hex": "#3f8f52"}, {"zh": "紫色", "en": "Purple", "hex": "#7b4f9d"}, {"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "粉色", "en": "Pink", "hex": "#e9a8b4"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}]}, "hasGuide": true}, {"id": 11, "name": "风衣", "concl": "适合复色到 skc 宽度=2-4\n3色37.5%最高但仅8款；2色26.7%且均件15.3件最高；1色15.4%垫底。\n整体样本偏小", "width": "2-4", "band": [2.0, 4.0], "noBoom": false, "stats": {"n": "65", "start": "2", "usual": "3", "high": "6", "peak": "9.2", "cap": "12.4", "avg": "4.63"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "3", "width": "2-4", "colors": "P0：军绿色、黑色、蓝色、灰色、藏青色\nP1：浅灰色、棕色、卡其色\nP2：深灰色、米色、酒红色、姜黄色、橄榄绿色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "6", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "6", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "9.2", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "9.2", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "12.4", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}, {"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}], "P1": [{"zh": "浅灰色", "en": "Light Grey", "hex": "#c9ced4"}, {"zh": "棕色", "en": "Brown", "hex": "#7b5136"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}], "P2": [{"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "米色", "en": "Beige", "hex": "#e4d8c3"}, {"zh": "酒红色", "en": "Claret Red", "hex": "#6e1f2a"}, {"zh": "姜黄色", "en": "Ginger Yellow", "hex": "#d9a12b"}, {"zh": "橄榄绿色", "en": "Olive Green", "hex": "#6f7a48"}]}, "hasGuide": true}, {"id": 12, "name": "毛衣", "concl": "适合复色到 skc 宽度=2-4\n1色40.9%最高（2色38.1%）；4色50%仅6款剔除；5色爆旺率0。\n>5色均件37.5件，疑受单款影响。", "width": "2-4", "band": [2.0, 4.0], "noBoom": false, "stats": {"n": "46", "start": "1", "usual": "2", "high": "3", "peak": "5", "cap": "5.75", "avg": "2.89"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "2", "width": "2-4", "colors": "P0：杏色、红色、深灰色、白色\nP1：黑色、蓝色、绿色、咖啡色、藏青色、黄色\nP2：卡其色、军绿色、浅灰色、灰色、天蓝色、米色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "3", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "5", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "5", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "5.75", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "杏色", "en": "Apricot", "hex": "#e8c9a8"}, {"zh": "红色", "en": "Red", "hex": "#c0392b"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}], "P1": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "绿色", "en": "Green", "hex": "#3f8f52"}, {"zh": "咖啡色", "en": "Coffee", "hex": "#5a4033"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "黄色", "en": "Yellow", "hex": "#e8c33a"}], "P2": [{"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}, {"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}, {"zh": "浅灰色", "en": "Light Grey", "hex": "#c9ced4"}, {"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "天蓝色", "en": "Sky Blue", "hex": "#79b7e3"}, {"zh": "米色", "en": "Beige", "hex": "#e4d8c3"}]}, "hasGuide": true}, {"id": 13, "name": "短裤", "concl": "适合复色到 skc 宽度=4\n4色20.3%最高且均件28.7件双优；0色与5色爆旺率低。", "width": "4", "band": [4.0, 4.0], "noBoom": false, "stats": {"n": "69", "start": "2", "usual": "3", "high": "6", "peak": "13", "cap": "16.6", "avg": "5.09"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "3", "width": "4", "colors": "P0：黑色、藏青色、卡其色、浅蓝色、白色、军绿色\nP1：灰色、棕色、橄榄绿色、酒红色、灰绿色\nP2：蓝色、深灰色、天蓝色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "6", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "6", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "13", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "13", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "16.6", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}, {"zh": "浅蓝色", "en": "Light Blue", "hex": "#8ab6e0"}, {"zh": "白色", "en": "White", "hex": "#fdfdfb"}, {"zh": "军绿色", "en": "Army Green", "hex": "#5b6440"}], "P1": [{"zh": "灰色", "en": "Grey", "hex": "#9aa0a6"}, {"zh": "棕色", "en": "Brown", "hex": "#7b5136"}, {"zh": "橄榄绿色", "en": "Olive Green", "hex": "#6f7a48"}, {"zh": "酒红色", "en": "Claret Red", "hex": "#6e1f2a"}, {"zh": "灰绿色", "en": "", "hex": "#cfd4da"}], "P2": [{"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "深灰色", "en": "Dark Grey", "hex": "#5b6167"}, {"zh": "天蓝色", "en": "Sky Blue", "hex": "#79b7e3"}]}, "hasGuide": true}, {"id": 14, "name": "泳衣", "concl": "适合复色到 skc 宽度=1-3（参考站外，站内无爆款验证）\n各档位爆旺率均为 0，无爆旺款", "width": "1-3", "band": [1.0, 3.0], "noBoom": true, "stats": {"n": "6", "start": "2.25", "usual": "3.5", "high": "4.75", "peak": "5", "cap": "5", "avg": "3.33"}, "rows": [{"p": "P0", "range": "近7天", "type": "7天内上架热卖款", "thr": "3.5", "width": "1-3", "colors": "P0：蓝色、黑色、卡其色、藏青色、宝蓝色、黄色\nP1：粉色、棕色、薄荷绿色、浅蓝色\nP2：海蓝色、盐白色"}, {"p": "P1", "range": "近8-30天", "type": "8-30天内上架热卖款", "thr": "4.75", "width": "", "colors": ""}, {"p": "P2", "range": "近31天-90天", "type": "31天-90天内上架热卖款", "thr": "4.75", "width": "", "colors": ""}, {"p": "P3", "range": "306-425天", "type": "去年同期上架，去年同期热卖", "thr": "5", "width": "", "colors": ""}, {"p": "P4", "range": "91-305天", "type": "非应季长青款", "thr": "5", "width": "", "colors": ""}, {"p": "P5", "range": "425天以上", "type": "上架时间超1年近期热卖款", "thr": "5", "width": "", "colors": ""}], "colors": {"P0": [{"zh": "蓝色", "en": "Blue", "hex": "#2f6fb3"}, {"zh": "黑色", "en": "Black", "hex": "#1b1b1d"}, {"zh": "卡其色", "en": "Khaki", "hex": "#c3a978"}, {"zh": "藏青色", "en": "Navy", "hex": "#22304f"}, {"zh": "宝蓝色", "en": "Royal Blue", "hex": "#1b3fa0"}, {"zh": "黄色", "en": "Yellow", "hex": "#e8c33a"}], "P1": [{"zh": "粉色", "en": "Pink", "hex": "#e9a8b4"}, {"zh": "棕色", "en": "Brown", "hex": "#7b5136"}, {"zh": "薄荷绿色", "en": "", "hex": "#cfd4da"}, {"zh": "浅蓝色", "en": "Light Blue", "hex": "#8ab6e0"}], "P2": [{"zh": "海蓝色", "en": "Sea Blue", "hex": "#2d7f9d"}, {"zh": "盐白色", "en": "Salt White", "hex": "#f1ece2"}]}, "hasGuide": true}];
+
+const ESC = s => String(s == null ? '' : s)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+const fmt = v => {
+  const n = Number(v);
+  if (!isFinite(n)) return String(v);
+  return Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/0$/,'');
+};
+const th = v => {
+  const n = Number(String(v).replace(/,/g,''));
+  return isFinite(n) ? n.toLocaleString('en-US') : String(v);
+};
+
+function firstLine(d){ return (d.concl || '').split('\n').filter(Boolean)[0] || ''; }
+function restLines(d){ return (d.concl || '').split('\n').filter(Boolean).slice(1); }
+function colorCount(d){
+  let n = 0;
+  ['P0','P1','P2'].forEach(k => { n += (d.colors && d.colors[k] ? d.colors[k].length : 0); });
+  return n;
+}
+
+function rail(active){
+  let h = '<div class="grp">总览</div>';
+  h += `<a class="ti ${active === 'ov' ? 'on' : ''}" onclick="go('ov')"><span class="n">00</span><span class="nm">复色宽度总览</span></a>`;
+  h += '<div class="grp">一层品类</div>';
+  DATA.forEach((d, i) => {
+    h += `<a class="ti ${active === i ? 'on' : ''}" onclick="go(${i})"><span class="n">${String(i+1).padStart(2,'0')}</span>`
+       + `<span class="nm">${ESC(d.name)}</span><span class="w">${d.width ? ESC(d.width) : '—'}</span></a>`;
+  });
+  document.getElementById('toc').innerHTML = h;
+}
+
+function overview(){
+
+  let rows = '';
+  DATA.forEach((d, i) => {
+    const s = d.stats || {};
+    const cc = colorCount(d);
+    rows += `<tr onclick="go(${i})" style="cursor:pointer">
+      <td><div class="oc"><span class="no">${String(i+1).padStart(2,'0')}</span><span class="nm">${ESC(d.name)}</span></div></td>
+      <td>${d.width ? `<span class="wtag">${ESC(d.width)} 色</span>` : '<span class="wtag no">暂无</span>'}</td>
+      <td><span class="concl">${ESC(firstLine(d))}</span></td>
+    </tr>`;
+  });
+
+  return `
+  <div class="kick">TEMU SELECTION GUIDE</div>
+  <h1 class="h1">招商复色标准指南</h1>
+  <p class="lead">整份指南只回答三件事：<b>复几个颜色</b>　·　<b>复什么颜色</b>　·　<b>什么时候复</b>。
+    所有品类按同一套口径给出宽度与色单，落到具体品类页即可直接抄清单。</p>
+
+  <div class="read">
+    <div><h4>01 复几个颜色</h4><p>看每档色数的<b>爆旺率</b>：最高那一档是效率最优色数；越过峰值后回落前最后一档即<b>封顶</b>，两者之间就是推荐宽度。</p></div>
+    <div><h4>02 复什么颜色</h4><p>按优先级抄清单：<b>P0</b> 站内站外并集、<b>P1</b> 站内缺口定向补、<b>P2</b> 站外差异做试色。</p></div>
+    <div><h4>03 什么时候复</h4><p><b>P0</b> 近 7 天热卖款门槛最低；<b>P1–P2</b> 近 8–90 天逐档放宽；<b>P3–P5</b> 去年同期与长青款只做补位。</p></div>
+  </div>
+
+  <div class="sh"><h3>各品类复色宽度与结论</h3><span>点击任意一行进入品类页</span></div>
+  <div class="otw">
+    <table class="ot">
+      <colgroup><col style="width:140px"><col style="width:104px"><col></colgroup>
+      <thead><tr>
+        <th>一层品类</th><th>推荐宽度</th><th>结论摘要</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div class="tfoot">
+      推荐宽度取自各品类爆旺率峰值区间；结论摘要引用原文首句，未做改写。
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>数据说明</b>　原文中「站外色彩趋势」与「选色」两表表体为空，页面按原文保留为待补充，不做推断；个别品类原文各档爆旺率均为 0，不据此给出宽度。
+  </div>`;
+}
+
+function guide(d){
+  if (!d.hasGuide || !d.rows.length) {
+    return `<div class="ph"><b>原文该品类无优先级清单</b><span>该品类未给出 P0–P5 时间档与推荐加色，本页不做补全。</span></div>`;
+  }
+  const card = c =>
+    `<div class="cc"><span class="sw" style="background:${ESC(c.hex)}"></span>
+      <span class="tx">${ESC(c.zh)}<em>${ESC(c.en || '')}</em></span></div>`;
+  const DESC = {
+    P0: ['先占主推位', n => `站内外都认，先铺这 ${n} 个`],
+    P1: ['定向补缺口', () => '站内缺的颜色，有位置再补'],
+    P2: ['差异化试色', () => '站外热门，挑得动的款式']
+  };
+  const groups = ['P0', 'P1', 'P2'].map(p2 => {
+    const list = (d.colors && d.colors[p2]) || [];
+    if (!list.length) return '';
+    const [t, hint] = DESC[p2];
+    return `<div class="prow"><span class="plab ${p2.toLowerCase()}">${p2}</span>
+      <div class="pbody">
+        <div class="pdesc"><b>${t}</b><span>${hint(list.length)}</span></div>
+        <div class="cgrid">${list.map(card).join('')}</div>
+      </div></div>`;
+  }).join('');
+
+  const merged = `<td class="gcol" rowspan="${d.rows.length}">
+      <div class="gnote">整份清单全档共用，任一档商品都可复下列颜色</div>
+      ${groups || '<span class="btx" style="margin:0">—</span>'}
+    </td>`;
+
+  let body = '';
+  d.rows.forEach((r, idx) => {
+    const cls = r.p === 'P0' ? 'p0' : r.p === 'P1' ? 'p1' : r.p === 'P2' ? 'p2' : '';
+    body += `<tr>
+      <td><span class="pb ${cls}">${ESC(r.p)}</span></td>
+      <td class="gtype">${ESC(r.range)}</td>
+      <td class="gtype">${ESC(r.type)}</td>
+      <td class="gthr">${ESC(r.thr)}</td>
+      <td class="gw">${r.width ? ESC(r.width) : '—'}</td>
+      ${idx === 0 ? merged : ''}
+    </tr>`;
+  });
+  return `<div class="gtw"><table class="gt">
+    <colgroup><col style="width:50px"><col style="width:92px"><col style="width:158px"><col style="width:80px"><col style="width:76px"><col></colgroup>
+    <thead><tr><th>优先级</th><th>上架时间</th><th>推荐加色商品类型</th><th>近15天日均销量</th><th>推荐 skc 宽度</th><th>推荐加色 · 全档共用</th></tr></thead>
+    <tbody>${body}</tbody></table></div>
+    <div class="legend">
+      <span><span class="dot" style="background:#f0a982"></span>P0 站内站外颜色并集，优先复</span>
+      <span><span class="dot" style="background:#7fa8c2"></span>P1 站内缺口，定向补</span>
+      <span><span class="dot" style="background:#9aa4b1"></span>P2 站外差异，只做试色</span>
+    </div>`;
+}
+
+function outs(d){
+  const p0 = (d.colors && d.colors.P0) || [];
+  const p1 = (d.colors && d.colors.P1) || [];
+  const p2 = (d.colors && d.colors.P2) || [];
+  const sw = c => `<div class="cc"><span class="sw" style="background:${ESC(c.hex)}"></span>
+     <span class="tx">${ESC(c.zh)}<em>${ESC(c.en || '')}</em></span></div>`;
+  const grp = (p, list) => `<div class="prow">
+      <span class="plab ${p.toLowerCase()}">${p}：</span>
+      <div class="cgrid">${list.map(sw).join('')}</div>
+    </div>`;
+  const groups = arr => arr.filter(g => g.list.length).map(g => grp(g.p, g.list)).join('');
+
+  const left = groups([{ p: 'P0', list: p0 }, { p: 'P2', list: p2 }]);
+  const right = groups([{ p: 'P1', list: p1 }]);
+
+  const outHtml = left || '<div class="ph"><b>原文该节无独立数据表</b><span>站外色彩趋势表体为空，仅以选色指南中的颜色体现，本页不另做排序或推断。</span></div>';
+  const inHtml = right || '<div class="ph"><b>站内缺口原文未列明细</b><span>该品类选色指南只给并集与站外清单，未单列站内缺口色，本页不做补全。</span></div>';
+
+  return `<div class="duo">
+    <div><div class="sub">站外热门颜色 · 可直接复<b>${p0.length + p2.length} 色</b></div>${outHtml}</div>
+    <div><div class="sub">站内缺口色 · 定向补<b>${p1.length} 色</b></div>${inHtml}</div>
+  </div>`;
+}
+
+function category(i){
+  const d = DATA[i];
+  const s = d.stats || {};
+  const hd = firstLine(d);
+  const rest = restLines(d);
+  const verdict = /^适合复色到/.test(hd) ? hd : (d.width ? '适合复色到 skc 宽度=' + d.width : (hd || '各档爆旺率均为 0，无爆旺款'));
+  const body = rest.join('\n');
+  const cc = colorCount(d);
+
+  return `
+  <div class="phead">
+    <div class="pnum">${String(i+1).padStart(2,'0')}</div>
+    <div class="pname">
+      <div class="bc">大码男装 · 第 ${i+1} 个一层品类</div>
+      <h1>${ESC(d.name)}</h1>
+    </div>
+    <div class="pnav">
+      <span class="gbtn" onclick="go('ov')">总览</span>
+      <button onclick="goStep(-1)" ${i === 0 ? 'disabled' : ''}>←</button>
+      <span class="pg">${String(i+1).padStart(2,'0')} / ${String(DATA.length).padStart(2,'0')}</span>
+      <button onclick="goStep(1)" ${i === DATA.length - 1 ? 'disabled' : ''}>→</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="chd"><h2><i>01</i>品类颜色边际</h2><span class="en">MARGIN</span></div>
+    <div class="hero">
+      <div class="hero-l">
+        <div class="hl">推荐复色宽度</div>
+        ${d.width ? `<div class="hv">${ESC(d.width)}<s>色</s></div>` : `<div class="hv na">暂无</div>`}
+        <div class="vsub">${d.noBoom ? '各档爆旺率均为 0，宽度参考站外口径' : '峰值后回落前最后一档即封顶'}</div>
+      </div>
+      <div class="verd">${ESC(verdict)}</div>
+    </div>
+    ${body ? `<div class="vtext">${ESC(body)}</div>` : ''}
+  </div>
+
+  <div class="card">
+    <div class="chd"><h2><i>02</i>选色指南 · 优先级与推荐加色</h2><span class="en">GUIDE</span></div>
+    ${guide(d)}
+  </div>
+
+  <div class="card">
+    <div class="chd"><h2><i>03</i>站外热门 · 站内缺口</h2><span class="en">OUT / IN</span></div>
+    ${outs(d)}
+  </div>
+
+  <div class="foot">数据取自原文表格，未做推断补全；原文中图表与空白单元格无文字数据之处，页面按原文标注为待补充。</div>`;
+}
+
+let CUR = 'ov';
+
+function goStep(step){
+  const n = Number(CUR) + Number(step);
+  if (n >= 0 && n < DATA.length) go(n);
+}
+
+function go(k){
+  CUR = k;
+  const view = document.getElementById('view');
+  if (k === 'ov') { view.innerHTML = overview(); rail('ov'); }
+  else { view.innerHTML = category(Number(k)); rail(Number(k)); }
+  window.scrollTo(0, 0);
+}
+go('ov');
+</script>
+</body>
+</html>
